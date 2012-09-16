@@ -144,6 +144,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SendAndBlockController.cs" />
     <Compile Include="Controllers\SendAsyncController.cs" />
+    <Compile Include="Controllers\SendCommandController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -225,6 +226,10 @@
       <Project>{A2995239-C5E5-49B6-B134-34CD331BC51F}</Project>
       <Name>Contract</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Messages\Messages.csproj">
+      <Project>{1A8EB159-DFA3-4A76-9A6F-4C36707A05BC}</Project>
+      <Name>Messages</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\SendLinks.cshtml" />
@@ -232,6 +237,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\SendCommand\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

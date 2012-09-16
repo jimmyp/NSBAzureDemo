@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "SendCommandController";
+}
+
+<h2>SendCommandController</h2>
+
+
+@using(Html.BeginForm("SendCommand", "SendCommand", FormMethod.Post))
+{
+    <input type="submit" value="Send Command" />
+}

@@ -19,14 +19,18 @@
     </Sites>
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+      <InputEndpoint name="Microsoft.WindowsAzure.Plugins.WebDeploy.InputEndpoint" protocol="tcp" port="8172" localPort="8172" />
     </Endpoints>
     <Imports>
       <Import moduleName="Diagnostics" />
       <Import moduleName="RemoteAccess" />
+      <Import moduleName="WebDeploy" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="AzureQueueConfig.ConnectionString" />
       <Setting name="AzureQueueConfig.QueueName" />
+      <Setting name="AzureSubscriptionStorageConfig.ConnectionString" />
+      <Setting name="AzureSagaPersisterConfig.ConnectionString" />
       <Setting name="MessageForwardingInCaseOfFaultConfig.ErrorQueue" />
       <Setting name="MsmqTransportConfig.NumberOfWorkerThreads" />
       <Setting name="MsmqTransportConfig.MaxRetries" />
@@ -42,6 +46,7 @@
       <Setting name="AzureQueueConfig.ConnectionString" />
       <Setting name="AzureQueueConfig.QueueName" />
       <Setting name="AzureSubscriptionStorageConfig.ConnectionString" />
+      <Setting name="AzureSagaPersisterConfig.ConnectionString" />
       <Setting name="AzureProfileConfig.Profiles" />
       <Setting name="MessageForwardingInCaseOfFaultConfig.ErrorQueue" />
       <Setting name="MsmqTransportConfig.NumberOfWorkerThreads" />

@@ -123,13 +123,19 @@
     <Compile Include="WorkerRole.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Contract\Contract.csproj">
       <Project>{A2995239-C5E5-49B6-B134-34CD331BC51F}</Project>
       <Name>Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{2737BF6A-3A08-4216-B8D5-521C38C4D034}</Project>
+      <Name>Logic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
