@@ -3,14 +3,14 @@
   <Role name="Website">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="AzureQueueConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
+      <Setting name="AzureQueueConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
       <Setting name="AzureQueueConfig.QueueName" value="websiteinputqueue" />
-      <Setting name="AzureSubscriptionStorageConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
-      <Setting name="AzureSagaPersisterConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
+      <Setting name="AzureSubscriptionStorageConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
+      <Setting name="AzureSagaPersisterConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
       <Setting name="MessageForwardingInCaseOfFaultConfig.ErrorQueue" value="error" />
       <Setting name="MsmqTransportConfig.NumberOfWorkerThreads" value="1" />
       <Setting name="MsmqTransportConfig.MaxRetries" value="5" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="jim" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBlQYJKoZIhvcNAQcDoIIBhjCCAYICAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECthoRLCq++KQ3rskPqxm94wDQYJKoZIhvcNAQEBBQAEggEA3Aa055AKkXxwV0htr5MAnYwWjauT38ECxyFaFgLES0ZNizjom5wKVeRZCL1z9lsL0Ud48WPFmczdMBem0eb4B6rxD9DoOcqG1M25i2e/epnUMlTjOe/iw6yejqNSkaAqku0OKRAuLYz4sgm0M1A7M8iWkdL/V9J7qMk9BbYqGOdHHN+3f0c4Vjq2Cu70vmZnrb7GaOkggEVxCMwX+Jo3+8XYeQS6GZB36ylkTFjoUki1lr1sagmwJz9BYgBLLekUJmfX3kBfkk7u9xHoeye2XPDSf1gf78Tl3FTU1DGR7l57ij3pegMVSywtqUWB+rukUnK32j3l/LYGcIblyXdi9DArBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECIA1F/M7MacogAgxeiUErSCQlQ==" />
@@ -23,15 +23,15 @@
   <Role name="Worker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="AzureQueueConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
+      <Setting name="AzureQueueConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
       <Setting name="AzureQueueConfig.QueueName" value="workerinputqueue" />
-      <Setting name="AzureSubscriptionStorageConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
-      <Setting name="AzureSagaPersisterConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
+      <Setting name="AzureSubscriptionStorageConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
+      <Setting name="AzureSagaPersisterConfig.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
       <Setting name="AzureProfileConfig.Profiles" value="NServiceBus.Production NServiceBus.OnAzureTableStorage NServiceBus.WithAzureStorageQueues" />
       <Setting name="MessageForwardingInCaseOfFaultConfig.ErrorQueue" value="error" />
       <Setting name="MsmqTransportConfig.NumberOfWorkerThreads" value="1" />
       <Setting name="MsmqTransportConfig.MaxRetries" value="5" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpagesmvc3;AccountKey=y/YVjgoOuUopwcof5ztxFKJkknmA9a7C81PfIoLTYlK3jhCMfl0sXyzxpZT1kmnOKP2mpuBRW9fiscXilTti+g==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=asyncpages;AccountKey=sZvibzilKTE6qJ9gMhoiAoJbSJyQQ2+T3K3GSiGa49IGFZyiDSOfLqX7HHpzvSNTfL4MdIhlizkymHKawJpW4w==" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="jim" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBlQYJKoZIhvcNAQcDoIIBhjCCAYICAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECthoRLCq++KQ3rskPqxm94wDQYJKoZIhvcNAQEBBQAEggEA3Aa055AKkXxwV0htr5MAnYwWjauT38ECxyFaFgLES0ZNizjom5wKVeRZCL1z9lsL0Ud48WPFmczdMBem0eb4B6rxD9DoOcqG1M25i2e/epnUMlTjOe/iw6yejqNSkaAqku0OKRAuLYz4sgm0M1A7M8iWkdL/V9J7qMk9BbYqGOdHHN+3f0c4Vjq2Cu70vmZnrb7GaOkggEVxCMwX+Jo3+8XYeQS6GZB36ylkTFjoUki1lr1sagmwJz9BYgBLLekUJmfX3kBfkk7u9xHoeye2XPDSf1gf78Tl3FTU1DGR7l57ij3pegMVSywtqUWB+rukUnK32j3l/LYGcIblyXdi9DArBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECIA1F/M7MacogAgxeiUErSCQlQ==" />

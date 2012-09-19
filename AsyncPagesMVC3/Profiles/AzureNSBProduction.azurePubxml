@@ -9,14 +9,14 @@
     <AzureEnableRemoteDesktop>True</AzureEnableRemoteDesktop>
     <AzureEnableWebDeploy>True</AzureEnableWebDeploy>
     <AzureFallbackToDeleteAndRecreateIfUpgradeFails>False</AzureFallbackToDeleteAndRecreateIfUpgradeFails>
-    <AzureHostedServiceLabel>AsyncPagesMVC3</AzureHostedServiceLabel>
-    <AzureHostedServiceName>asyncpagesmvc3</AzureHostedServiceName>
+    <AzureHostedServiceLabel>AsyncPages</AzureHostedServiceLabel>
+    <AzureHostedServiceName>asyncpages</AzureHostedServiceName>
     <AzureEnableIntelliTrace>False</AzureEnableIntelliTrace>
     <AzureEnableProfiling>False</AzureEnableProfiling>
     <AzureServiceConfiguration>Cloud</AzureServiceConfiguration>
     <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
-    <AzureStorageAccountLabel>AsyncPagesMvc3</AzureStorageAccountLabel>
-    <AzureStorageAccountName>asyncpagesmvc3</AzureStorageAccountName>
+    <AzureStorageAccountLabel>AsyncPages</AzureStorageAccountLabel>
+    <AzureStorageAccountName>asyncpages</AzureStorageAccountName>
     <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
   </PropertyGroup>
 </Project>
