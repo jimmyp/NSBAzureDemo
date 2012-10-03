@@ -8,10 +8,10 @@
     <ProjectGuid>{f32f2a21-92d3-47b9-a06a-8c23cef55bed}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AsyncPagesMVC3</RootNamespace>
-    <AssemblyName>AsyncPagesMVC3</AssemblyName>
+    <RootNamespace>NSBOnAzure</RootNamespace>
+    <AssemblyName>NSBOnAzure</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
-    <Name>AsyncPagesMVC3</Name>
+    <Name>NSBOnAzure</Name>
     <UseIISExpressByDefault>False</UseIISExpressByDefault>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -38,20 +38,28 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommandProcessorAndSubscriber1\CommandProcessorAndSubscriber1.csproj">
+      <Name>CommandProcessorAndSubscriber1</Name>
+      <Project>{39f7fc6a-4319-4ac5-89af-36d730fc547d}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>CommandProcessorAndSubscriber1</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\Subscriber2\Subscriber2.csproj">
+      <Name>Subscriber2</Name>
+      <Project>{fde2a98c-753f-45a7-ad86-5cfc2f122c32}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>Subscriber2</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
     <ProjectReference Include="..\Website\Website.csproj">
       <Name>Website</Name>
       <Project>{12afc759-8e5f-4b5c-b092-f7ff30a1f8c8}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>Website</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
-    </ProjectReference>
-    <ProjectReference Include="..\Worker\Worker.csproj">
-      <Name>Worker</Name>
-      <Project>{39f7fc6a-4319-4ac5-89af-36d730fc547d}</Project>
-      <Private>True</Private>
-      <RoleType>Worker</RoleType>
-      <RoleName>Worker</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>

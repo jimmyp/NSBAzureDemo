@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="AsyncPagesMVC3" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-05.1.7">
+<ServiceConfiguration serviceName="NSBOnAzure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-05.1.7">
   <Role name="Website">
     <Instances count="1" />
     <ConfigurationSettings>
@@ -20,11 +20,11 @@
       <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="441EF9F1CF9DF39BEFD62E977038866A11325A6C" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
-  <Role name="Worker">
+  <Role name="CommandProcessorAndSubscriber1">
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="AzureQueueConfig.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="AzureQueueConfig.QueueName" value="workerinputqueue" />
+      <Setting name="AzureQueueConfig.QueueName" value="CommandProcessorAndSubscriber1inputqueue" />
       <Setting name="AzureSubscriptionStorageConfig.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="AzureSagaPersisterConfig.ConnectionString" value="UseDevelopmentStorage=true" />
       <Setting name="AzureProfileConfig.Profiles" value="NServiceBus.Production NServiceBus.OnAzureTableStorage NServiceBus.WithAzureStorageQueues" />
@@ -36,7 +36,27 @@
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="[UserName]" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="[AccountKey]" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-09-12T23:59:59.0000000+10:00" />
-      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="441EF9F1CF9DF39BEFD62E977038866A11325A6C" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="Subscriber2">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="AzureQueueConfig.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="AzureQueueConfig.QueueName" value="Subscriber2inputqueue" />
+      <Setting name="AzureSubscriptionStorageConfig.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="AzureSagaPersisterConfig.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="AzureProfileConfig.Profiles" value="NServiceBus.Production NServiceBus.OnAzureTableStorage NServiceBus.WithAzureStorageQueues" />
+      <Setting name="MessageForwardingInCaseOfFaultConfig.ErrorQueue" value="error" />
+      <Setting name="MsmqTransportConfig.NumberOfWorkerThreads" value="1" />
+      <Setting name="MsmqTransportConfig.MaxRetries" value="5" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="[UserName]" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="[AccountKey]" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-09-12T23:59:59.0000000+10:00" />
     </ConfigurationSettings>
     <Certificates>
       <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="441EF9F1CF9DF39BEFD62E977038866A11325A6C" thumbprintAlgorithm="sha1" />

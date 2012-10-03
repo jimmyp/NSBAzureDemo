@@ -1,7 +1,7 @@
 using NServiceBus;
 using NServiceBus.Config;
 
-namespace Worker
+namespace CommandProcessorAndSubscriber1
 {
     public class EndpointConfiguration : IConfigureThisEndpoint, AsA_Worker, IWantCustomInitialization
     {

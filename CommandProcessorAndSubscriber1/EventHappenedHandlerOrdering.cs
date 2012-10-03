@@ -5,7 +5,7 @@ using System.Text;
 using Logic;
 using NServiceBus;
 
-namespace Worker
+namespace CommandProcessorAndSubscriber1
 {
     class EventHappenedHandlerOrdering : ISpecifyMessageHandlerOrdering
     {
